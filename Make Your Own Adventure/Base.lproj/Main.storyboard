@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Ug-MD-Vv9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -45,10 +45,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfR-NT-aNk">
                                 <rect key="frame" x="154.5" y="519" width="66" height="30"/>
                                 <state key="normal" title="Button #1"/>
+                                <connections>
+                                    <segue destination="X6J-MB-P6p" kind="push" id="VFg-ox-QT4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PON-hS-mql">
                                 <rect key="frame" x="153.5" y="597" width="68" height="30"/>
                                 <state key="normal" title="Button #2"/>
+                                <connections>
+                                    <segue destination="e3B-Zo-bVb" kind="push" id="yke-Dg-0EA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,21 +80,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aXa-bR-AnZ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="You click Button #1" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aXa-bR-AnZ">
                                 <rect key="frame" x="16" y="64" width="343" height="207"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpa-ga-fsy">
-                                <rect key="frame" x="154.5" y="519" width="66" height="30"/>
-                                <state key="normal" title="Button #1"/>
+                                <rect key="frame" x="153.5" y="519" width="68" height="30"/>
+                                <state key="normal" title="Button #2"/>
+                                <connections>
+                                    <segue destination="gvZ-ma-Huf" kind="push" id="FMr-b1-9eI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aI-yP-KDX">
-                                <rect key="frame" x="153.5" y="597" width="68" height="30"/>
-                                <state key="normal" title="Button #2"/>
+                                <rect key="frame" x="153" y="597" width="69" height="30"/>
+                                <state key="normal" title="Button #4"/>
+                                <connections>
+                                    <segue destination="M3W-A0-ouh" kind="push" id="YoX-hd-eUs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -104,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="snE-Bl-xS3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="462" y="-26"/>
+            <point key="canvasLocation" x="463" y="-103"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="YH5-cy-ZWz">
@@ -114,21 +125,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="l8g-Sa-TgK">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="You Picked #2" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="l8g-Sa-TgK">
                                 <rect key="frame" x="16" y="64" width="343" height="207"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkJ-tR-wfU">
-                                <rect key="frame" x="154.5" y="519" width="66" height="30"/>
-                                <state key="normal" title="Button #1"/>
+                                <rect key="frame" x="153" y="519" width="69" height="30"/>
+                                <state key="normal" title="Button #3"/>
+                                <connections>
+                                    <segue destination="QtA-g2-ukF" kind="push" id="JjZ-Hy-eE3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H99-aU-POX">
                                 <rect key="frame" x="153.5" y="597" width="68" height="30"/>
-                                <state key="normal" title="Button #2"/>
+                                <state key="normal" title="Button #5"/>
+                                <connections>
+                                    <segue destination="qy2-FZ-El2" kind="push" id="bHw-vP-n7T"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -144,7 +160,107 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="suv-B9-hdi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="489" y="663"/>
+            <point key="canvasLocation" x="441" y="770"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1dj-rJ-dav">
+            <objects>
+                <viewController id="qy2-FZ-El2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WPM-P8-dTE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="You click Button #5" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ozG-r5-GSJ">
+                                <rect key="frame" x="16" y="64" width="343" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jvE-XE-Abw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hwO-Th-29v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Lu-O8-Y0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2026" y="843"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2Pr-xS-Y5u">
+            <objects>
+                <viewController id="QtA-g2-ukF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jTz-Pd-Gri">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="You click Button #3" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DnX-Sc-sVN">
+                                <rect key="frame" x="16" y="64" width="343" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Sai-xT-JxT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="I9N-4c-OcV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rGO-gb-iNW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1262" y="525"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pCV-lA-qTU">
+            <objects>
+                <viewController id="M3W-A0-ouh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lX0-KH-SWI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="You click Button #4" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M0y-3h-2DY">
+                                <rect key="frame" x="16" y="64" width="343" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="mZi-ZA-TKC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gm4-Jk-QfM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qwh-iw-Rtl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2414" y="153"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ihc-aq-TAY">
+            <objects>
+                <viewController id="gvZ-ma-Huf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b3u-QZ-gIW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="You click Button #2" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u2H-WK-Qzb">
+                                <rect key="frame" x="16" y="64" width="343" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cw2-Ms-9ya"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8eX-ow-5jJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="221-ki-tnu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1638" y="-432"/>
         </scene>
     </scenes>
 </document>
